@@ -9,8 +9,10 @@ import { Component } from 'angular2/core';
 export class AppComponent{
 
     title: string;
+    todos: string[];
 
     constructor(){
         this.title = 'Angular2Do';
+        this.todos = ['dsfa'];
     }
 }
