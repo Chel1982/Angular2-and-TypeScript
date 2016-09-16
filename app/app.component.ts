@@ -13,10 +13,13 @@ export class AppComponent{
 
     constructor(){
         this.title = 'Angular2Do';
-        this.todos = ['dsfa'];
+        this.todos = [];
     }
 
-    addToDO(){
-        console.log('Добавление задачи');
+    addToDo(input: HTMLInputElement){
+        let title = input.value;
+        input.value = '';
+        console.log('Добавление задачи: ' + title);
+        this.todos.push(title);
     }
 }
