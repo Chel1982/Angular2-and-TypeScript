@@ -15,4 +15,8 @@ export class AppComponent{
         this.title = 'Angular2Do';
         this.todos = ['dsfa'];
     }
+
+    addToDO(){
+        console.log('Добавление задачи');
+    }
 }

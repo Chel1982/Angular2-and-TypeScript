@@ -10,7 +10,7 @@
         <div class="ui segment form">
             <div class="ui fluid action input">
                 <input type="text" class="form-control" name="title" placeholder="Что нужно сделать">
-                <button type="button" class="ui primary button" onclick="console.log('Добавление задачи')">Добавить</button>
+                <button type="button" class="ui primary button" (click)="addToDo">Добавить</button>
             </div>
         </div>
         <div class="ui raised segment" *ngIf="todos.length > 0">
