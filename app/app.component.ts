@@ -15,7 +15,7 @@ export class AppComponent{
     todos: Todo[];
 
     constructor(){
-        this.title = 'Angular2Do';
+        this.title = 'Angular 2Do';
         this.todos = [];
     }
 
