@@ -3,5 +3,7 @@
 
 import { bootstrap } from 'angular2/platform/browser';
 import { AppComponent } from './app.component';
+import { RestComponent } from './rest.component';
 
 bootstrap(AppComponent);
+bootstrap(RestComponent);

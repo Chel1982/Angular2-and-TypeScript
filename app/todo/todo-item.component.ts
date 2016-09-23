@@ -16,7 +16,6 @@ export class TodoItem{
     }
 
     delete(){
-        console.log('Delete', this.todo);
         this.deleted.emit(this.todo);
     }
 }
