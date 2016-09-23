@@ -1,6 +1,5 @@
 import { Component } from 'angular2/core';
 
-
 @Component({
     selector: 'todo-rest',
     templateUrl: './app/rest.component.html'
