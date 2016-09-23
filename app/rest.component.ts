@@ -12,9 +12,12 @@ export class RestComponent{
     hTitle: string;
     urlService: UrlService;
 
-    constructor( urlService:UrlService) {
+    constructor(urlService:UrlService) {
         this.hTitle = 'Получение данных из mockapi';
         this.urlService = urlService;
     }
 
+    getAll(){
+        return this.urlService.getAllService();
+    }
 }
