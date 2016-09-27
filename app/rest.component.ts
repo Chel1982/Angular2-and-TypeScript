@@ -8,10 +8,9 @@ import {UrlService} from "./url.service";
 })
 
 export class RestComponent{
-
-    hTitle: string;
+    public hTitle: string = '';
     urlService: UrlService;
-    getData;
+    public data: any;
 
     constructor(urlService:UrlService) {
         this.hTitle = 'Получение данных из mockapi';
@@ -19,10 +18,13 @@ export class RestComponent{
     }
 
     getAll(){
-       this.getData = this.urlService.getAllService().subscribe(
-           data => this.getData = JSON.stringify(data),
+        let xxx: any = this.urlService.getAllService().subscribe(
+            (data: any) => {
+                this.data = data
+            },
            error => alert(error),
            () => console.log('Finished')
        );
+        console.log(xxx);
     }
 }

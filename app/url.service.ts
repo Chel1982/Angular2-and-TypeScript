@@ -5,12 +5,12 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class UrlService{
 
-    http;
+    http: Http;
 
     constructor(http: Http){}
 
     getAllService(){
-        return this.http.get('http://57e24c2b9b6c4411002b4d6d.mockapi.io/api/films/:endpoint')
+        return this.http.get('http://57e24c2b9b6c4411002b4d6d.mockapi.io/api/films/Film')
             .map(res => res.json());
     }
 
